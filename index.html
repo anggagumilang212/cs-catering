@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs catering</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- animasi aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- dark mode -->
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- header start -->
+    <header class="absolute top-0 left-0 z-50 flex items-center w-full bg-transparent">
+        <div class="container">
+            <div class="relative flex items-center justify-between">
+                <div class="px-4">
+                    <a href="#beranda" class="block py-6 text-lg font-bold text-red">CS Catering</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+                        <span
+                            class="transition duration-500 ease-in-out origin-top-left hamburger-line dark:bg-white"></span>
+                        <span class="transition duration-500 ease-in-out hamburger-line dark:bg-white"></span>
+                        <span
+                            class="transition duration-500 ease-in-out origin-bottom-left hamburger-line dark:bg-white"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white  dark:shadow-slate-500 dark:bg-gray-900 opacity-50   shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:rounded-none lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#beranda"
+                                    class="flex py-2 mx-8 text-base text-black dark:text-white group-hover:text-red">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="flex py-2 mx-8 text-base text-black dark:text-white group-hover:text-red">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#produk"
+                                    class="flex py-2 mx-8 text-base text-black dark:text-white group-hover:text-red">Produk</a>
+                            </li>
+                            <li class="group">
+                                <a href="#app"
+                                    class="flex py-2 mx-8 text-base text-black dark:text-white group-hover:text-red">App</a>
+                            </li>
+                            <!-- <li class="group">
+                                <a href="#"
+                                    class="flex px-2 py-2 mx-8 text-base text-white rounded-lg w-14 bg-red group-hover:text-red">Login</a>
+                            </li> -->
+
+                            <li class="flex items-center pl-1">
+                                <div class="flex pl-[25px]">
+
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-red">
+                                            <div
+                                                class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle">
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section hero start -->
+    <section id="beranda" class="pt-16 lg:pt-36 lg:right-0 dark:bg-gray-900">
+        <div class="container">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full px-4 lg:w-1/2" data-aos="fade-right">
+                    <h1 class="block mt-1 text-4xl font-bold text-red">CS Catering</spanclass=>
+                    </h1>
+                    <p class="text-3xl font-medium text-black dark:text-white w-96 h-30">Kami menyediakan berbagai jenis
+                        catering.</p>
+                    <a href="https://wa.me/6281365584190">
+                        <h3
+                            class="flex h-8 max-w-sm px-2 mt-2 mb-5 text-lg font-bold text-white rounded-lg w-36 bg-red hover:bg-rose-950">
+                            Order Now
+                            <img src="/image/arah.png" alt="" class="gap-5">
+                        </h3>
+
+                    </a>
+
+                </div>
+                <div class="relative w-full px-4 lg:w-1/2" data-aos="fade-left">
+                    <div
+                        class="lg:absolute lg:left-1/2 md:-translate-y-3 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:-mt-30">
+                        <img src="/image/1.PNG" alt="angga gumilang" class="max-w-full mx-auto lg:mb-100 md:w-[250px]">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section hero end -->
+
+    <!-- section about start -->
+    <section id="about" class="pb-20 pt-36 dark:bg-gray-900">
+        <div class="container mx-auto lg:justify-center lg:items-center">
+            <div class="flex flex-wrap items-center px-4">
+                <img src="/image/2.PNG" alt="" class="w-full lg:w-[300px] md:w-[250px] lg:ml-32" data-aos="fade-right">
+                <div class="w-full gap-1 px-4 mb-20 lg:ml-32 lg:w-1/2 lg:mt-11 lg:px-10 md:w-full" data-aos="fade-left">
+                    <h2 class="text-2xl font-bold text-red-800 text-red">About</h2>
+                    <p class="text-4xl font-bold text-black dark:text-white">We cook the best <br />tasty food</p>
+                    <p class="text-xl font-normal text-black w-90 h-28 dark:text-white">Lorem Ipsum is not simply random
+                        text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section about end -->
+
+    <!-- section produk start -->
+    <section id="produk" class="pt-3 pb-32 bg-white dark:bg-gray-900">
+        <div class="container">
+            <div class="w-full px-4" data-aos="zoom-in">
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <div class="text-2xl font-bold text-red">Special</div>
+                    <div class="text-4xl font-bold text-black dark:text-white">Menu of the week</div>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 py-5 lg:w-1/3 md:w-1/2" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="p-1 bg-white rounded-lg shadow-lg dark:bg-slate-700">
+                        <img src="/image/3.PNG" alt="gambar produk" class="max-w-sm mx-auto max-h-[200px]">
+                        <h2 class="px-4 text-2xl font-semibold text-black dark:text-white">Ayam Bawang</h2>
+                        <p class="px-4 text-2xl font-normal text-black dark:text-white">Lorem, ipsum dolor sit amet
+                            consectetur
+                            adipisicing.</p>
+                        <a href="https://api.whatsapp.com/send?phone=6281365584190">
+                            <div class="flex w-40 h-8 px-4 mt-2 mb-10 ml-3 rounded-lg bg-red hover:bg-rose-950 ">
+                                <p class="text-xl font-medium text-white">Pre Order
+                                </p>
+                                <img src="/image/arah.png" alt="" class="gap-5">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full px-4 py-5 lg:w-1/3 md:w-1/2" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="p-1 bg-white rounded-lg shadow-lg dark:bg-slate-700">
+                        <img src="/image/4.PNG" alt="gambar produk" class="max-w-sm mx-auto max-h-[200px]">
+                        <h2 class="px-4 text-2xl font-semibold text-black dark:text-white">Ayam Bawang</h2>
+                        <p class="px-4 text-2xl font-normal text-black dark:text-white">Lorem, ipsum dolor sit amet
+                            consectetur
+                            adipisicing.</p>
+                        <a href="https://api.whatsapp.com/send?phone=6281365584190">
+                            <div class="flex w-40 h-8 px-4 mt-2 mb-10 ml-3 rounded-lg bg-red hover:bg-rose-950 ">
+                                <p class="text-xl font-medium text-white">Pre Order
+                                </p>
+                                <img src="/image/arah.png" alt="" class="gap-5">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full px-4 py-5 lg:w-1/3 md:w-1/2" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="p-1 bg-white rounded-lg shadow-lg dark:bg-slate-700">
+                        <img src="/image/5.PNG" alt="gambar produk" class="max-w-sm mx-auto max-h-[200px]">
+                        <h2 class="px-4 text-2xl font-semibold text-black dark:text-white">Ayam Bawang</h2>
+                        <p class="px-4 text-2xl font-normal text-black dark:text-white">Lorem, ipsum dolor sit amet
+                            consectetur
+                            adipisicing.</p>
+                        <a href="https://api.whatsapp.com/send?phone=6281365584190">
+                            <div class="flex w-40 h-8 px-4 mt-2 mb-10 ml-3 rounded-lg bg-red hover:bg-rose-950 ">
+                                <p class="text-xl font-medium text-white">Pre Order
+                                </p>
+                                <img src="/image/arah.png" alt="" class="gap-5">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section produk end -->
+
+    <!-- section kren -->
+    <section id="app" class="pt-3 pb-20 dark:bg-gray-900">
+        <div class="container mx-auto lg:justify-center lg:items-center">
+            <div class="flex flex-wrap items-center px-4">
+                <img src="/image/mobile.png" alt="" class="w-[120px] lg:w-48 md:w-[180px] lg:ml-32"
+                    data-aos="fade-right">
+
+                <img src="/image/mobile2.png" alt=""
+                    class="w-24 -ml-16 mt-24 md:mt-32  lg:w-40 md:w-[150px] lg:-ml-20 lg:mt-32" data-aos="fade-right">
+
+                <div class="w-full gap-1 px-4 mb-20 lg:ml-32 lg:w-1/2 lg:mt-11 lg:px-10 md:w-full" data-aos="fade-left">
+                    <h2 class="text-2xl font-bold text-red-800 text-red">About</h2>
+                    <p class="text-4xl font-bold text-black dark:text-white">We cook the best <br />tasty food</p>
+                    <p class="text-xl font-normal text-black w-90 h-28 dark:text-white">Lorem Ipsum is not simply random
+                        text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+    <!-- footer start -->
+    <footer class="pt-24 pb-12 bg-slate-700">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 font-medium text-slate-300 md:w-1/3" data-aos="fade-right">
+                    <h2 class="text-2xl font-bold text-white">CS Catering</h2>
+                    <h3 class="mb-2 text-xl font-semibold text-white">Hubungi Kami</h3>
+                    <p>cscatering@gmail.com</p>
+                    <p>Jl.Syech Lemahabang No. 13</p>
+                    <p>Cirebon</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3" data-aos="zoom-in">
+                    <h3 class="mb-5 text-xl font-semibold text-white">Produk</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block mb-3 text-base hover:text-red">chiken</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block mb-3 text-base hover:text-red">catring</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block mb-3 text-base hover:text-red">usus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3" data-aos="fade-left">
+                    <h3 class="mb-5 text-xl font-semibold text-white">Tautun</h3>
+                    <ul class="text-slate-300">
+
+                        <li>
+                            <a href="#beranda" class="inline-block mb-3 text-base hover:text-red">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block mb-3 text-base hover:text-red">About</a>
+                        </li>
+                        <li>
+                            <a href="#produk" class="inline-block mb-3 text-base hover:text-red">Produk</a>
+                        </li>
+                        <li>
+                            <a href="#app" class="inline-block mb-3 text-base hover:text-red">App</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <div class="flex items-center justify-center">
+                    <a href="#" target="_blank"
+                        class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-red hover:text-white">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=6281365584190"
+                        class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-red hover:text-white">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                    <a href="#"
+                        class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-red hover:text-white">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+
+
+
+                </div>
+                <p class="mt-4 text-center text-white">© 2023 CS Catering. Hak Cipta.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- animasi aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- ion icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- footer end -->
+    <script src="/dist/js/script.js"></script>
+</body>
+
+</html>
